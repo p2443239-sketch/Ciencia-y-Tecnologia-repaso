@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repaso para examen final | Ciencia y Tecnología 9.º A</title>
+<style>
+:root{--bg:#f3f6fb;--card:#fff;--ink:#172033;--muted:#5b667a;--blue:#155eef;--green:#147d45;--red:#b42318;--line:#d9e1ef}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(135deg,#123b78,#1769aa);color:#fff;padding:28px 18px}
+header .wrap,main{max-width:920px;margin:auto}h1{margin:0 0 8px;font-size:clamp(1.5rem,4vw,2.2rem)}header p{margin:4px 0;color:#eaf2ff}
+main{padding:20px 14px 48px}.intro,.question,.section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 3px 12px #1720330a}
+h2{font-size:1.25rem;margin:0 0 8px}h3{font-size:1.05rem;margin:0 0 10px}.tag{display:inline-block;font-size:.78rem;font-weight:700;background:#eaf1ff;color:#1849a9;border-radius:999px;padding:3px 9px;margin-bottom:8px}
+.options{display:grid;gap:8px;margin:12px 0}.option{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px;cursor:pointer}.option:hover{background:#f7f9ff}.option input{margin-top:5px;accent-color:var(--blue)}
+button{border:0;border-radius:10px;padding:11px 15px;font-size:1rem;font-weight:700;cursor:pointer;background:var(--blue);color:#fff;margin:5px 5px 5px 0}button.secondary{background:#e8edf5;color:#25334d}button.show{background:#147d45}
+.feedback{margin-top:10px;padding:10px 12px;border-radius:9px;display:none}.feedback.good{display:block;background:#e8f7ee;color:#116437}.feedback.bad{display:block;background:#fff0ef;color:#912018}
+.answer{display:none;border-left:4px solid var(--green);padding:10px 12px;background:#f0fbf4;border-radius:0 8px 8px 0;margin-top:10px}.answer.visible{display:block}
+textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit}.score{font-size:1.1rem;font-weight:800}.small{font-size:.9rem;color:var(--muted)}.actions{position:sticky;bottom:0;background:#ffffffed;backdrop-filter:blur(8px);padding:10px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+details{margin:10px 0}summary{cursor:pointer;font-weight:700}.matching{display:grid;gap:10px}.matchrow{display:grid;grid-template-columns:1fr;gap:6px;padding:10px;border:1px solid var(--line);border-radius:10px}@media(min-width:650px){.matchrow{grid-template-columns:1.4fr 1fr;align-items:center}}
+select{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:white;font:inherit}
+footer{text-align:center;color:var(--muted);font-size:.88rem;padding:15px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>Guía interactiva de repaso</h1>
+<p><strong>Centro Escolar “Cuscatlán” · Ciencia y Tecnología · Noveno grado, sección A</strong></p>
+<p>Repaso para el examen final: rocas, geomorfología, vulcanismo, peligros volcánicos y sismos.</p>
+</div></header>
+<main>
+<section class="intro">
+<h2>Cómo utilizar esta guía</h2>
+<ol><li>Responde las preguntas sin consultar las respuestas.</li><li>Pulsa <strong>“Revisar respuestas”</strong> para comprobar las preguntas de selección.</li><li>En las preguntas abiertas, escribe tu respuesta y luego consulta la respuesta modelo.</li></ol>
+<p class="small">Esta guía se elaboró a partir del examen proporcionado. Las respuestas modelo de desarrollo son orientativas: puedes expresarlas con tus propias palabras si conservas las ideas científicas esenciales.</p>
+<div id="score" class="score" aria-live="polite">Aún no has revisado tus respuestas.</div>
+</section>
+
+<section class="section"><span class="tag">PARTE I · Selección múltiple</span><h2>Rocas y procesos geológicos</h2>
+<div class="question" data-answer="c"><h3>1. ¿Qué tipo de rocas se forman a partir de sedimentos acumulados en capas, derivados de la meteorización y la erosión de rocas preexistentes?</h3><div class="options">
+<label class="option"><input type="radio" name="q1" value="a"> Metamórficas</label><label class="option"><input type="radio" name="q1" value="b"> Estacionarias</label><label class="option"><input type="radio" name="q1" value="c"> Rocas sedimentarias</label></div><div class="feedback"></div><div class="answer">Respuesta correcta: <strong>Rocas sedimentarias.</strong> Se forman por acumulación, compactación y cementación de sedimentos.</div></div>
+<div class="question" data-answer="c"><h3>2. ¿Qué rocas se originan cuando otras rocas cambian debido a procesos geológicos? Su nombre significa “cambiar de forma”.</h3><div class="options"><label class="option"><input type="radio" name="q2" value="a"> Rocas sedimentarias</label><label class="option"><input type="radio" name="q2" value="b"> Ígneas</label><label class="option"><input type="radio" name="q2" value="c"> Metamórficas</label></div><div class="feedback"></div><div class="answer">Respuesta correcta: <strong>Metamórficas.</strong> Se forman cuando una roca preexistente se transforma por presión, temperatura y otros procesos, sin fundirse por completo.</div></div>
+<div class="question" data-answer="c"><h3>3. ¿Qué concepto se refiere al estudio de las formas de la superficie terrestre y de los procesos que las originan y modifican?</h3><div class="options"><label class="option"><input type="radio" name="q3" value="a"> Vulcanismo</label><label class="option"><input type="radio" name="q3" value="b"> Geoide</label><label class="option"><input type="radio" name="q3" value="c"> Geomorfología</label></div><div class="feedback"></div><div class="answer">Respuesta correcta: <strong>Geomorfología.</strong></div></div>
+<div class="question" data-answer="c"><h3>4. ¿Cómo se llama el sitio o región de la superficie terrestre donde el magma asciende y puede liberar lava, gases y rocas piroclásticas?</h3><div class="options"><label class="option"><input type="radio" name="q4" value="a"> Región continental</label><label class="option"><input type="radio" name="q4" value="b"> Geocentro</label><label class="option"><input type="radio" name="q4" value="c"> Volcán</label></div><div class="feedback"></div><div class="answer">Respuesta correcta: <strong>Volcán.</strong></div></div>
+</section>
+
+<section class="section"><span class="tag">PARTE II · Comprensión lectora</span><h2>Vulcanismo</h2>
+<div class="question" data-answer="a"><h3>5. ¿Qué nombre recibe la extensa zona volcánica que rodea el océano Pacífico y está relacionada con procesos de subducción?</h3><div class="options"><label class="option"><input type="radio" name="q5" value="a"> Cinturón de Fuego del Pacífico</label><label class="option"><input type="radio" name="q5" value="b"> Vulcanismo ascendiente</label><label class="option"><input type="radio" name="q5" value="c"> Magma del permafrost</label></div><div class="feedback"></div><div class="answer">Respuesta correcta: <strong>Cinturón de Fuego del Pacífico.</strong> La subducción favorece la generación de magma que puede ascender y alimentar volcanes.</div></div>
+<div class="question" data-answer="a"><h3>6. Según el texto, ¿qué provoca la intensa actividad volcánica de Ío, luna de Júpiter?</h3><div class="options"><label class="option"><input type="radio" name="q6" value="a"> Las fuerzas de marea gravitacional producidas por Júpiter</label><label class="option"><input type="radio" name="q6" value="b"> El calor extremo del Sol</label><label class="option"><input type="radio" name="q6" value="c"> La subducción de una placa oceánica terrestre</label></div><div class="feedback"></div><div class="answer">Respuesta correcta: <strong>Las fuerzas de marea gravitacional producidas por Júpiter.</strong> Estas generan calentamiento interno y actividad volcánica.</div></div>
+<div class="question" data-answer="b"><h3>7. El texto afirma que las manchas oscuras conocidas como María en la Luna se formaron hace pocos siglos por el calor extremo del Sol. ¿Es correcto?</h3><div class="options"><label class="option"><input type="radio" name="q7" value="a"> Sí, el texto lo confirma</label><label class="option"><input type="radio" name="q7" value="b"> No, esa afirmación es incorrecta</label></div><div class="feedback"></div><div class="answer">Respuesta correcta: <strong>No, esa afirmación es incorrecta.</strong> Según el texto introductorio, las manchas oscuras lunares se relacionan con actividad volcánica antigua; no se formaron hace pocos siglos por el calor del Sol.</div></div>
+</section>
+
+<section class="section"><span class="tag">PARTE III · Relacionar</span><h2>Peligros volcánicos y tipos de rocas</h2>
+<p>Selecciona el término que corresponde a cada descripción.</p>
+<div class="matching" id="matching">
+<div class="matchrow"><label for="m1"><strong>a.</strong> La caída de ceniza puede interrumpir actividades cotidianas y el tráfico aéreo; grandes erupciones pueden afectar el clima.</label><select id="m1" data-answer="Caída de tefra"><option value="">Selecciona…</option><option>Andesita</option><option>Caliza</option><option>Lahares</option><option>Corrientes de densidad piroclásticas (CDP)</option><option>Coladas de lava</option><option>Caída de tefra</option></select><div class="feedback"></div></div>
+<div class="matchrow"><label for="m2"><strong>b.</strong> Emanaciones de roca fundida con temperaturas aproximadas de 800 a 1 200 °C.</label><select id="m2" data-answer="Coladas de lava"><option value="">Selecciona…</option><option>Andesita</option><option>Caliza</option><option>Lahares</option><option>Corrientes de densidad piroclásticas (CDP)</option><option>Coladas de lava</option><option>Caída de tefra</option></select><div class="feedback"></div></div>
+<div class="matchrow"><label for="m3"><strong>c.</strong> Mezcla muy peligrosa de fragmentos, gases calientes y vapor o agua líquida que se desplaza por gravedad.</label><select id="m3" data-answer="Corrientes de densidad piroclásticas (CDP)"><option value="">Selecciona…</option><option>Andesita</option><option>Caliza</option><option>Lahares</option><option>Corrientes de densidad piroclásticas (CDP)</option><option>Coladas de lava</option><option>Caída de tefra</option></select><div class="feedback"></div></div>
+<div class="matchrow"><label for="m4"><strong>d.</strong> Flujos rápidos de partículas sólidas y agua; pueden formarse por lluvias intensas que movilizan escombros volcánicos.</label><select id="m4" data-answer="Lahares"><option value="">Selecciona…</option><option>Andesita</option><option>Caliza</option><option>Lahares</option><option>Corrientes de densidad piroclásticas (CDP)</option><option>Coladas de lava</option><option>Caída de tefra</option></select><div class="feedback"></div></div>
+<div class="matchrow"><label for="m5"><strong>e.</strong> Roca sedimentaria compuesta principalmente por calcita, utilizada para fabricar cemento Portland y cal.</label><select id="m5" data-answer="Caliza"><option value="">Selecciona…</option><option>Andesita</option><option>Caliza</option><option>Lahares</option><option>Corrientes de densidad piroclásticas (CDP)</option><option>Coladas de lava</option><option>Caída de tefra</option></select><div class="feedback"></div></div>
+<div class="matchrow"><label for="m6"><strong>f.</strong> Roca ígnea volcánica, gris y de grano fino, cuyo nombre procede de los Andes.</label><select id="m6" data-answer="Andesita"><option value="">Selecciona…</option><option>Andesita</option><option>Caliza</option><option>Lahares</option><option>Corrientes de densidad piroclásticas (CDP)</option><option>Coladas de lava</option><option>Caída de tefra</option></select><div class="feedback"></div></div>
+</div>
+<div class="answer visible"><strong>Clave de respuestas:</strong> a) Caída de tefra; b) Coladas de lava; c) Corrientes de densidad piroclásticas (CDP); d) Lahares; e) Caliza; f) Andesita.</div>
+</section>
+
+<section class="section"><span class="tag">PARTE IV · Preguntas de análisis</span><h2>El origen y la propagación de los sismos</h2>
+<p>Escribe tu respuesta primero. Después abre “Ver respuesta modelo” para estudiar las ideas principales.</p>
+<div class="question"><h3>8. Explicando la analogía del trozo de madera y la dinámica de las placas tectónicas, ¿qué ocurre con la energía acumulada desde la deformación hasta la ruptura de una falla?</h3><textarea placeholder="Escribe aquí tu respuesta…"></textarea><details><summary>Ver respuesta modelo</summary>Las fuerzas relacionadas con el movimiento de las placas deforman las rocas y acumulan energía elástica. Cuando el esfuerzo supera la resistencia de la falla, ocurre una ruptura o deslizamiento repentino y la energía acumulada se libera en forma de ondas sísmicas que se propagan por la Tierra.</details></div>
+<div class="question"><h3>9. ¿Cuáles son las diferencias entre hipocentro y epicentro? Indica qué dimensiones o coordenadas utiliza cada uno.</h3><textarea placeholder="Escribe aquí tu respuesta…"></textarea><details><summary>Ver respuesta modelo</summary>El <strong>hipocentro o foco</strong> es el punto dentro de la Tierra donde se inicia la ruptura; su ubicación considera latitud, longitud y profundidad. El <strong>epicentro</strong> es la proyección vertical del hipocentro sobre la superficie terrestre y se ubica mediante latitud y longitud, sin indicar profundidad.</details></div>
+<div class="question"><h3>10. ¿Qué es una falla geológica y qué fenómeno natural provoca su ruptura repentina?</h3><textarea placeholder="Escribe aquí tu respuesta…"></textarea><details><summary>Ver respuesta modelo</summary>Una falla geológica es una fractura o discontinuidad de la corteza terrestre a lo largo de la cual se desplazan bloques rocosos. Su ruptura repentina libera energía acumulada y provoca un sismo.</details></div>
+<div class="question"><h3>11. ¿Cuál es la diferencia principal entre hipocentro y epicentro según la ubicación del sismo?</h3><textarea placeholder="Escribe aquí tu respuesta…"></textarea><details><summary>Ver respuesta modelo</summary>El hipocentro se encuentra en el interior terrestre y es donde comienza la ruptura; el epicentro se encuentra en la superficie, directamente sobre el hipocentro.</details></div>
+</section>
+
+<div class="actions"><button onclick="checkAll()">Revisar respuestas</button><button class="secondary" onclick="showAnswers()">Mostrar todas las respuestas</button><button class="secondary" onclick="resetQuiz()">Volver a empezar</button></div>
+<footer>Material de repaso · Centro Escolar “Cuscatlán” · Ciencia y Tecnología · Noveno “A”</footer>
+</main>
+<script>
+function checkAll(){
+ let total=0, correct=0;
+ document.querySelectorAll('.question[data-answer]').forEach(q=>{
+  total++; const ans=q.dataset.answer; const chosen=q.querySelector('input:checked'); const fb=q.querySelector('.feedback');
+  fb.className='feedback';
+  if(chosen && chosen.value===ans){correct++;fb.textContent='¡Correcto!';fb.classList.add('good')}
+  else {fb.textContent=chosen?'Respuesta incorrecta. Consulta la respuesta correcta debajo.':'No has seleccionado una respuesta.';fb.classList.add('bad')}
+ });
+ document.querySelectorAll('.matchrow').forEach(row=>{
+  total++; const sel=row.querySelector('select'); const fb=row.querySelector('.feedback');fb.className='feedback';
+  if(sel.value===sel.dataset.answer){correct++;fb.textContent='¡Correcto!';fb.classList.add('good')}
+  else{fb.textContent='Respuesta correcta: '+sel.dataset.answer;fb.classList.add('bad')}
+ });
+ document.getElementById('score').textContent=`Resultado de selección y relación: ${correct} de ${total} respuestas correctas.`;
+ document.querySelectorAll('.answer').forEach(a=>a.classList.add('visible'));
+}
+function showAnswers(){document.querySelectorAll('.answer').forEach(a=>a.classList.add('visible'));document.querySelectorAll('details').forEach(d=>d.open=true)}
+function resetQuiz(){
+ document.querySelectorAll('input[type=radio]').forEach(x=>x.checked=false);
+ document.querySelectorAll('select').forEach(x=>x.value='');
+ document.querySelectorAll('textarea').forEach(x=>x.value='');
+ document.querySelectorAll('.feedback').forEach(x=>{x.className='feedback';x.textContent=''});
+ document.querySelectorAll('.answer').forEach(x=>x.classList.remove('visible'));
+ document.querySelectorAll('details').forEach(x=>x.open=false);
+ document.getElementById('score').textContent='Aún no has revisado tus respuestas.';
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body></html>
